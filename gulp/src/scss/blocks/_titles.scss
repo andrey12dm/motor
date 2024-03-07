@@ -1,0 +1,126 @@
+.title {
+	background: var(--dark-grey, #1e1e1e);
+}
+.title__blog {
+	display: flex;
+}
+.flex {
+	margin: 0 20px 0 0;
+}
+// .motor__school {
+// 	// flex-basis: calc((100% - 10px) / 2);
+// 	// background: url(/img/motor-school.jpg) rgba(0, 0, 0, 0.6);
+// }
+.motor__blog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 96px 202px 73px;
+	background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.6) 0%,
+			rgba(0, 0, 0, 0.6) 100%
+		),
+		url(../../img/motor-school.jpg), lightgray 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	h3 {
+		color: #fff;
+		text-align: center;
+		// font-family: 'DIN Pro';
+		font-size: 64px;
+		font-style: italic;
+		font-weight: 900;
+		line-height: 100%; /* 64px */
+		letter-spacing: 2.56px;
+		text-transform: uppercase;
+		margin: 0 0 30px 0;
+	}
+	p {
+		color: #fff;
+		text-align: center;
+		font-family: Rubik;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 21.6px */
+		letter-spacing: 0.72px;
+		margin: 0 0 50px 0;
+	}
+	a {
+		color: #fff;
+		text-align: center;
+		font-family: Rubik;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		text-transform: uppercase;
+		display: flex;
+		width: 238px;
+		height: 60px;
+		text-align: center;
+		padding: 14px 21px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-shrink: 0;
+		background: #b21111;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
+}
+.sale__blog {
+	background: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.6) 0%,
+			rgba(0, 0, 0, 0.6) 100%
+		),
+		url(../../img/sale.jpg), lightgray 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	// padding: 96px 154px 73px 155px;
+	h3 {
+		color: #fff;
+		text-align: center;
+		// font-family: 'DIN Pro';
+		font-size: 64px;
+		font-style: italic;
+		font-weight: 900;
+		line-height: 100%; /* 64px */
+		letter-spacing: 2.56px;
+		text-transform: uppercase;
+		margin: 0 0 30px 0;
+	}
+	p {
+		color: #fff;
+		text-align: center;
+		font-family: Rubik;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 21.6px */
+		letter-spacing: 0.72px;
+		margin: 0 0 50px 0;
+	}
+	a {
+		color: #fff;
+		text-align: center;
+		font-family: Rubik;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		text-transform: uppercase;
+		display: flex;
+		width: 238px;
+		height: 60px;
+		text-align: center;
+		padding: 14px 21px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-shrink: 0;
+		background: #b21111;
+		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
+}
