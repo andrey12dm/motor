@@ -1,45 +1,61 @@
+// mobile
 .title {
 	background: var(--dark-grey, #1e1e1e);
 }
 .wraper {
-	max-width: 1474px;
+	max-width: 341px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 5px;
+	@include tablet() {
+		max-width: 1474px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
 }
 .title__blog {
 	display: flex;
 	flex-wrap: wrap;
 }
 .flex {
-	margin: 0 20px 0 0;
+	margin: 0 0 22px 0;
+	@include tablet() {
+		margin: 0 10px 20px 0;
+		// max-width: 712px;
+	}
 }
-// .motor__school {
-// 	// flex-basis: calc((100% - 10px) / 2);
-// 	// background: url(/img/motor-school.jpg) rgba(0, 0, 0, 0.6);
-// }
 .motor__blog {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	padding: 96px 202px 73px;
 	background: linear-gradient(
 			0deg,
 			rgba(0, 0, 0, 0.6) 0%,
 			rgba(0, 0, 0, 0.6) 100%
 		),
-		url(../../img/motor-school.jpg), lightgray 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
+		url(../../img/motor-school-mobil.png), lightgray 50% / cover no-repeat;
+	padding: 20px 31px 19px 31px;
 	h3 {
 		color: #fff;
 		text-align: center;
-		// font-family: 'DIN Pro';
-		font-size: 64px;
+		font-family: 'Barlow', sans-serif;
+		font-size: 38px;
 		font-style: italic;
 		font-weight: 900;
-		line-height: 100%; /* 64px */
-		letter-spacing: 2.56px;
+		line-height: 40px; /* 105.263% */
+		letter-spacing: 1.52px;
 		text-transform: uppercase;
+		@include tablet() {
+			color: #fff;
+			text-align: center;
+			font-family: 'DIN Pro';
+			font-size: 64px;
+			font-style: italic;
+			font-weight: 900;
+			line-height: 100%; /* 64px */
+			letter-spacing: 2.56px;
+			text-transform: uppercase;
+		}
 	}
 	p {
 		color: #fff;
@@ -47,8 +63,8 @@
 		font-family: Rubik;
 		font-size: 18px;
 		font-style: normal;
-		font-weight: 400;
-		line-height: 120%; /* 21.6px */
+		// font-weight: 400;
+		line-height: 120%;
 		letter-spacing: 0.72px;
 		margin: 0 0 50px 0;
 	}
@@ -63,52 +79,107 @@
 		text-transform: uppercase;
 		display: flex;
 		width: 238px;
-		height: 60px;
-		text-align: center;
+		height: 50px;
 		padding: 14px 21px;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		flex-shrink: 0;
-		background: #b21111;
+		background: var(--red, #d10101);
 		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	}
+	@include tablet() {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 0.6) 0%,
+				rgba(0, 0, 0, 0.6) 100%
+			),
+			url(../../img/motor-school.jpg), lightgray 50% / cover no-repeat;
+		padding: 100px 129px 70px 129px;
+		h3 {
+			color: #fff;
+			text-align: center;
+			font-family: 'Barlow', sans-serif;
+			font-size: 64px;
+			font-style: italic;
+			font-weight: 900;
+			line-height: 100%;
+			letter-spacing: 2.56px;
+			text-transform: uppercase;
+			margin: 0 0 30px 0;
+		}
+		p {
+			color: #fff;
+			text-align: center;
+			font-family: Rubik;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			letter-spacing: 0.72px;
+			margin: 0 0 50px 0;
+		}
+		a {
+			color: #fff;
+			text-align: center;
+			font-family: Rubik;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			text-transform: uppercase;
+			display: flex;
+			width: 238px;
+			height: 60px;
+			text-align: center;
+			padding: 14px 21px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			flex-shrink: 0;
+			background: #b21111;
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+		}
 	}
 }
 .sale__blog {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
 	background: linear-gradient(
 			0deg,
 			rgba(0, 0, 0, 0.6) 0%,
 			rgba(0, 0, 0, 0.6) 100%
 		),
-		url(../../img/sale.jpg), lightgray 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 96px 154px 73px 155px;
+		url(../../img/sale-mobil.png), lightgray 50% / cover no-repeat;
+	padding: 22px 36px 22px 36px;
 	h3 {
 		color: #fff;
 		text-align: center;
-		// font-family: 'DIN Pro';
-		font-size: 64px;
+		font-family: 'Barlow', sans-serif;
+		font-size: 38px;
 		font-style: italic;
 		font-weight: 900;
-		line-height: 100%; /* 64px */
-		letter-spacing: 2.56px;
+		line-height: 40px; /* 105.263% */
+		letter-spacing: 1.52px;
 		text-transform: uppercase;
-		margin: 0 0 30px 0;
+		margin: 0 0 9px 0;
 	}
 	p {
 		color: #fff;
 		text-align: center;
 		font-family: Rubik;
-		font-size: 18px;
+		font-size: 14px;
 		font-style: normal;
 		font-weight: 400;
-		line-height: 120%; /* 21.6px */
-		letter-spacing: 0.72px;
-		margin: 0 0 50px 0;
+		line-height: 21px; /* 150% */
+		letter-spacing: 0.56px;
+		margin: 0 0 20px;
 	}
 	a {
 		color: #fff;
@@ -121,49 +192,109 @@
 		text-transform: uppercase;
 		display: flex;
 		width: 238px;
-		height: 60px;
-		text-align: center;
+		height: 50px;
 		padding: 14px 21px;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		flex-shrink: 0;
-		background: #b21111;
+		background: var(--red, #d10101);
 		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	}
+	@include tablet() {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 0.6) 0%,
+				rgba(0, 0, 0, 0.6) 100%
+			),
+			url(../../img/sale.jpg), lightgray 50% / cover no-repeat;
+		padding: 100px 69px 70px 69px;
+		h3 {
+			color: #fff;
+			text-align: center;
+			font-family: 'Barlow', sans-serif;
+			font-size: 64px;
+			font-style: italic;
+			font-weight: 900;
+			line-height: 100%;
+			letter-spacing: 2.56px;
+			text-transform: uppercase;
+			margin: 0 0 30px 0;
+		}
+		p {
+			color: #fff;
+			text-align: center;
+			font-family: Rubik;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			letter-spacing: 0.72px;
+			margin: 0 0 50px 0;
+		}
+		a {
+			color: #fff;
+			text-align: center;
+			font-family: Rubik;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			text-transform: uppercase;
+			display: flex;
+			width: 238px;
+			height: 60px;
+			text-align: center;
+			padding: 14px 21px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			flex-shrink: 0;
+			background: #b21111;
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+		}
+	}
 }
+
 .title__sto {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	background: linear-gradient(
 			0deg,
 			rgba(0, 0, 0, 0.6) 0%,
 			rgba(0, 0, 0, 0.6) 100%
 		),
-		url(../../img/sto.jpg), lightgray 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 96px 197px 73px 198px;
+		url(../../img/sto-mobil.png), lightgray 50% / cover no-repeat;
+	padding: 22px 42px 22px 42px;
 	h3 {
 		color: #fff;
 		text-align: center;
-		// font-family: 'DIN Pro';
-		font-size: 64px;
+		font-family: 'Barlow', sans-serif;
+		font-size: 38px;
 		font-style: italic;
 		font-weight: 900;
-		line-height: 100%; /* 64px */
-		letter-spacing: 2.56px;
+		line-height: 40px; /* 105.263% */
+		letter-spacing: 1.52px;
 		text-transform: uppercase;
-		margin: 0 0 30px 0;
+		margin: 0 0 9px 0;
 	}
 	p {
+		max-width: 293px;
 		color: #fff;
 		text-align: center;
 		font-family: Rubik;
-		font-size: 18px;
+		font-size: 14px;
 		font-style: normal;
 		font-weight: 400;
-		line-height: 120%; /* 21.6px */
-		letter-spacing: 0.72px;
-		margin: 0 0 50px 0;
+		line-height: 21px; /* 150% */
+		letter-spacing: 0.56px;
+		margin: 0 0 37px 0;
 	}
 	a {
 		color: #fff;
@@ -176,49 +307,107 @@
 		text-transform: uppercase;
 		display: flex;
 		width: 238px;
-		height: 60px;
-		text-align: center;
+		height: 50px;
 		padding: 14px 21px;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		flex-shrink: 0;
-		background: #b21111;
+		background: var(--red, #d10101);
 		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	}
+	@include tablet() {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 0.6) 0%,
+				rgba(0, 0, 0, 0.6) 100%
+			),
+			url(../../img/sto.jpg), lightgray 50% / cover no-repeat;
+		padding: 77px 210px 78px 209px;
+		h3 {
+			color: #fff;
+			text-align: center;
+			font-family: 'Barlow', sans-serif;
+			font-size: 64px;
+			font-style: italic;
+			font-weight: 900;
+			line-height: 100%; /* 64px */
+			letter-spacing: 2.56px;
+			text-transform: uppercase;
+			margin: 0 0 30px 0;
+		}
+		p {
+			color: #fff;
+			text-align: center;
+			font-family: Rubik;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%; /* 21.6px */
+			letter-spacing: 0.72px;
+			margin: 0 0 65px 0;
+		}
+		a {
+			color: #fff;
+			text-align: center;
+			font-family: Rubik;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			text-transform: uppercase;
+			display: flex;
+			width: 238px;
+			height: 60px;
+			text-align: center;
+			padding: 14px 21px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			flex-shrink: 0;
+			background: #b21111;
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+		}
+	}
 }
-.title__toucker {
+.toucker__blog {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	background: linear-gradient(
 			0deg,
 			rgba(0, 0, 0, 0.6) 0%,
 			rgba(0, 0, 0, 0.6) 100%
 		),
-		url(../../img/tower.jpg), lightgray 50%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding: 96px 143px 73px 144px;
+		url(../../img/tower-mobil.png), lightgray 50% / cover no-repeat;
+	padding: 9px 0;
 	h3 {
 		color: #fff;
 		text-align: center;
-		// font-family: 'DIN Pro';
-		font-size: 64px;
+		font-family: 'Barlow', sans-serif;
+		font-size: 38px;
 		font-style: italic;
 		font-weight: 900;
-		line-height: 100%; /* 64px */
-		letter-spacing: 2.56px;
+		line-height: 40px; /* 105.263% */
+		letter-spacing: 1.52px;
 		text-transform: uppercase;
-		margin: 0 0 30px 0;
+		margin: 0 0 9px 0;
 	}
 	p {
 		color: #fff;
 		text-align: center;
 		font-family: Rubik;
-		font-size: 18px;
+		font-size: 14px;
 		font-style: normal;
 		font-weight: 400;
-		line-height: 120%; /* 21.6px */
-		letter-spacing: 0.72px;
-		margin: 0 0 50px 0;
+		line-height: 21px; /* 150% */
+		letter-spacing: 0.56px;
+		margin: 0 0 37px 0;
 	}
 	a {
 		color: #fff;
@@ -231,14 +420,305 @@
 		text-transform: uppercase;
 		display: flex;
 		width: 238px;
-		height: 60px;
-		text-align: center;
+		height: 50px;
 		padding: 14px 21px;
 		justify-content: center;
 		align-items: center;
 		gap: 10px;
 		flex-shrink: 0;
-		background: #b21111;
+		background: var(--red, #d10101);
 		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	}
+	@include tablet() {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 0.6) 0%,
+				rgba(0, 0, 0, 0.6) 100%
+			),
+			url(../../img/tower.jpg), lightgray 50% / cover no-repeat;
+		padding: 88px 40px 89px 40px;
+		h3 {
+			color: #fff;
+			text-align: center;
+			font-family: 'Barlow', sans-serif;
+			font-size: 64px;
+			font-style: italic;
+			font-weight: 900;
+			line-height: 100%;
+			letter-spacing: 2.56px;
+			text-transform: uppercase;
+			margin: 0 0 30px 0;
+		}
+		p {
+			color: #fff;
+			text-align: center;
+			font-family: Rubik;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%;
+			letter-spacing: 0.72px;
+			margin: 0 0 50px 0;
+		}
+		a {
+			color: #fff;
+			text-align: center;
+			font-family: Rubik;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			text-transform: uppercase;
+			display: flex;
+			width: 238px;
+			height: 60px;
+			text-align: center;
+			padding: 14px 21px;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			flex-shrink: 0;
+			background: #b21111;
+			box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+		}
+	}
 }
+
+// .title__flex {
+// 	display: flex;
+// }
+// .title__blog {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// }
+// .flex {
+// 	margin: 0 20px 0 0;
+// }
+// .motor__blog {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	// max-width: 712px;
+// 	padding: 111px 129px 111px 129px;
+
+// 	background: linear-gradient(
+// 			0deg,
+// 			rgba(0, 0, 0, 0.6) 0%,
+// 			rgba(0, 0, 0, 0.6) 100%
+// 		),
+// 		url(../../img/motor-school.jpg), lightgray 50%;
+// 	object-fit: contain;
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	h3 {
+// 		color: #fff;
+// 		text-align: center;
+// 		font-family: 'Barlow', sans-serif;
+// 		font-size: 64px;
+// 		font-style: italic;
+// 		font-weight: 900;
+// 		line-height: 100%;
+// 		letter-spacing: 2.56px;
+// 		text-transform: uppercase;
+// 		margin: 0 0 30px 0;
+// 	}
+// 	p {
+// 		color: #fff;
+// 		text-align: center;
+// 		font-family: Rubik;
+// 		font-size: 18px;
+// 		font-style: normal;
+// 		font-weight: 400;
+// 		line-height: 120%;
+// 		letter-spacing: 0.72px;
+// 		margin: 0 0 50px 0;
+// 	}
+// 	a {
+//
+// 	}
+// }
+// .sale__blog {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	// width: 712px;
+// 	background: linear-gradient(
+// 			0deg,
+// 			rgba(0, 0, 0, 0.6) 0%,
+// 			rgba(0, 0, 0, 0.6) 100%
+// 		),
+// 		url(../../img/sale.jpg), lightgray 50%;
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	// padding: 96px 154px 73px 155px;
+// 	padding: 85px 69px 70px;
+
+// 	h3 {
+// 		color: #fff;
+// 		text-align: center;
+// 		font-family: 'Barlow', sans-serif;
+// 		font-size: 64px;
+// 		font-style: italic;
+// 		font-weight: 900;
+// 		line-height: 100%;
+// 		letter-spacing: 2.56px;
+// 		text-transform: uppercase;
+// 		margin: 0 0 30px 0;
+// 	}
+// 	p {
+// 		color: #fff;
+// 		text-align: center;
+// 		font-family: Rubik;
+// 		font-size: 18px;
+// 		font-style: normal;
+// 		font-weight: 400;
+// 		line-height: 120%;
+// 		letter-spacing: 0.72px;
+// 		margin: 0 0 50px 0;
+// 	}
+// 	a {
+// 		color: #fff;
+// 		text-align: center;
+// 		font-family: Rubik;
+// 		font-size: 16px;
+// 		font-style: normal;
+// 		font-weight: 500;
+// 		line-height: normal;
+// 		text-transform: uppercase;
+// 		display: flex;
+// 		width: 238px;
+// 		height: 60px;
+// 		text-align: center;
+// 		padding: 14px 21px;
+// 		justify-content: center;
+// 		align-items: center;
+// 		gap: 10px;
+// 		flex-shrink: 0;
+// 		background: #b21111;
+// 		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+// 	}
+// }
+// .sto__blog {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	// width: 712px;
+// 	background: linear-gradient(
+// 			0deg,
+// 			rgba(0, 0, 0, 0.6) 0%,
+// 			rgba(0, 0, 0, 0.6) 100%
+// 		),
+// 		url(../../img/sto.jpg), lightgray 50%;
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	padding: 77px 197px 78px 196px;
+// 	h3 {
+// 		color: #fff;
+// 		text-align: center;
+// 		font-family: 'Barlow', sans-serif;
+// 		font-size: 64px;
+// 		font-style: italic;
+// 		font-weight: 900;
+// 		line-height: 100%; /* 64px */
+// 		letter-spacing: 2.56px;
+// 		text-transform: uppercase;
+// 		margin: 0 0 30px 0;
+// 	}
+// 	p {
+// 		color: #fff;
+// 		text-align: center;
+// 		font-family: Rubik;
+// 		font-size: 18px;
+// 		font-style: normal;
+// 		font-weight: 400;
+// 		line-height: 120%; /* 21.6px */
+// 		letter-spacing: 0.72px;
+// 		margin: 0 0 72px 0;
+// 	}
+// 	a {
+// 		color: #fff;
+// 		text-align: center;
+// 		font-family: Rubik;
+// 		font-size: 16px;
+// 		font-style: normal;
+// 		font-weight: 500;
+// 		line-height: normal;
+// 		text-transform: uppercase;
+// 		display: flex;
+// 		width: 238px;
+// 		height: 60px;
+// 		text-align: center;
+// 		padding: 14px 21px;
+// 		justify-content: center;
+// 		align-items: center;
+// 		gap: 10px;
+// 		flex-shrink: 0;
+// 		background: #b21111;
+// 		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+// 	}
+// }
+// .toucker__blog {
+// 	display: flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// 	// width: 712px;
+
+// 	background: linear-gradient(
+// 			0deg,
+// 			rgba(0, 0, 0, 0.6) 0%,
+// 			rgba(0, 0, 0, 0.6) 100%
+// 		),
+// 		url(../../img/tower.jpg), lightgray 50%;
+// 	object-fit: contain;
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	padding: 88px 40px 89px 40px;
+// 	h3 {
+// 		color: #fff;
+// 		text-align: center;
+// 		font-family: 'Barlow', sans-serif;
+// 		font-size: 64px;
+// 		font-style: italic;
+// 		font-weight: 900;
+// 		line-height: 100%;
+// 		letter-spacing: 2.56px;
+// 		text-transform: uppercase;
+// 		margin: 0 0 30px 0;
+// 	}
+// 	p {
+// 		color: #fff;
+// 		text-align: center;
+// 		font-family: Rubik;
+// 		font-size: 18px;
+// 		font-style: normal;
+// 		font-weight: 400;
+// 		line-height: 120%;
+// 		letter-spacing: 0.72px;
+// 		margin: 0 0 50px 0;
+// 	}
+// 	a {
+// 		color: #fff;
+// 		text-align: center;
+// 		font-family: Rubik;
+// 		font-size: 16px;
+// 		font-style: normal;
+// 		font-weight: 500;
+// 		line-height: normal;
+// 		text-transform: uppercase;
+// 		display: flex;
+// 		width: 238px;
+// 		height: 60px;
+// 		text-align: center;
+// 		padding: 14px 21px;
+// 		justify-content: center;
+// 		align-items: center;
+// 		gap: 10px;
+// 		flex-shrink: 0;
+// 		background: #b21111;
+// 		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+// 	}
+// }
