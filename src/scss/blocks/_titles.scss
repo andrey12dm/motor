@@ -90,6 +90,7 @@
 	}
 	@include tablet() {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
@@ -133,8 +134,8 @@
 			line-height: normal;
 			text-transform: uppercase;
 			display: flex;
-			width: 238px;
-			height: 60px;
+			// width: 238px;
+			// height: 60px;
 			text-align: center;
 			padding: 14px 21px;
 			justify-content: center;
